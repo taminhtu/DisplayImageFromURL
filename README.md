@@ -15,7 +15,8 @@ You can watch the video here:
 [![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/watch?v=4m66M7KJuX4&t=416s)
 
 
-If the image file that you get from un secure link (http but not https), you can fix the error by openning the info.plist file as source code and add this code: 
+If the image file that you get from un secure link (http but not https), you can fix the error by openning the info.plist file as source code and add this xml code: 
+```
 <key>NSAppTransportSecurity</key>
     <dict>
         <key>NSAllowsArbitraryLoads</key>
@@ -31,3 +32,4 @@ If the image file that you get from un secure link (http but not https), you can
             </dict>
        </dict>
   </dict>
+```
